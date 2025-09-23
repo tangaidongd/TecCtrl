@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5e3f9736-10d6-4883-98ad-763ebab389c8}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5538da1d-520a-4f44-93b2-043f778aee89}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{3d707696-f8fb-4ff2-891f-1187a857efa3}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="module">
+      <UniqueIdentifier>{3d3394b7-ace3-4b4d-a990-8e64e8225b8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\libs">
+      <UniqueIdentifier>{084dce0f-af79-473a-8372-9b1d3cae9ae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\libs\ZsTecDll">
+      <UniqueIdentifier>{0438b963-36ad-444d-ab8e-a7cca76f91ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\gui">
+      <UniqueIdentifier>{0a6a11a4-8c04-49ec-89e9-afac9c4b23cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\gui\ReportCtrl">
+      <UniqueIdentifier>{5fb6a493-c2be-4cd9-9d16-08357c9e57a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DialogPassword.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogSetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestZsTec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestZsTecDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\gui\ReportCtrl\ReportCtrl.cpp">
+      <Filter>module\gui\ReportCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogTecValid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TestZsTec.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DialogPassword.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogSetting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestZsTec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestZsTecDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="module\libs\ZsTecDll\zsTecDll.h">
+      <Filter>module\libs\ZsTecDll</Filter>
+    </ClInclude>
+    <ClInclude Include="module\gui\ReportCtrl\ReportCtrl.h">
+      <Filter>module\gui\ReportCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogTecValid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\TestZsTec.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\TestZsTec.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

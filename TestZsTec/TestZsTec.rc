@@ -1,0 +1,366 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TestZsTec.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TestZsTec.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TestZsTec"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TestZsTec 1.21.04.29 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2019-2021",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TESTZSTEC_DIALOG DIALOGEX 0, 0, 321, 250
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TestZsTec"
+FONT 12, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "退出",IDOK,7,226,307,14
+    PUSHBUTTON      "配置",IDC_BTN_SETTING,10,12,50,14
+    DEFPUSHBUTTON   "打开",IDC_BTN_OPEN,76,12,50,14
+    GROUPBOX        "控制参数",IDC_STATIC,16,33,193,186
+    COMBOBOX        IDC_COMBO_NO,33,49,55,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "控制温度(℃)",IDC_STATIC,26,71,65,8
+    EDITTEXT        IDC_EDIT_GET_DEST_TEMP,101,69,30,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SET_DEST_TEMP,149,69,30,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "刷新",IDC_BTN_GET,99,47,33,14
+    PUSHBUTTON      "设置",IDC_BTN_SET,148,47,33,14
+    RTEXT           "温度阈值(℃)",IDC_STATIC,26,88,65,8
+    EDITTEXT        IDC_EDIT_GET_MAX_TEMP,101,86,30,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SET_MAX_TEMP,149,86,30,14,ES_AUTOHSCROLL
+    RTEXT           "最大输出(V)",IDC_STATIC,26,105,65,8
+    EDITTEXT        IDC_EDIT_GET_MAX_OUTPUT,101,103,30,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SET_MAX_OUTPUT,149,103,30,14,ES_AUTOHSCROLL
+    RTEXT           "控制模式",IDC_STATIC,26,179,65,8
+    EDITTEXT        IDC_EDIT_GET_MODE,101,177,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "List1",IDC_LIST_TEMP,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,219,33,83,185
+    COMBOBOX        IDC_COMBO_SET_MODE,149,178,32,53,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "是否启动",IDC_STATIC,26,198,65,8
+    EDITTEXT        IDC_EDIT_IS_RUN,101,196,30,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "启动",IDC_BTN_START,148,195,24,14
+    PUSHBUTTON      "停止",IDC_BTN_STOP,177,195,24,14
+    RTEXT           "最大电流(A)",IDC_STATIC,26,122,65,8
+    EDITTEXT        IDC_EDIT_GET_MAX_CURRENT,101,120,30,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SET_MAX_CURRENT,149,120,30,14,ES_AUTOHSCROLL
+    RTEXT           "超温温度上限(℃)",IDC_STATIC,26,141,65,8
+    RTEXT           "超温温度下限(℃)",IDC_STATIC,26,162,65,8
+    EDITTEXT        IDC_EDIT_GET__LIMIT_MAX,101,138,30,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SET__LIMIT_MAX,149,138,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET__LIMIT_MIN,149,157,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GET__LIMIT_MIN,101,157,30,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_SETTING DIALOGEX 0, 0, 286, 220
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 12, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "三个两通道TEC",IDC_RADIO_MODE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,20,68,10
+    CONTROL         "六个单通道TEC",IDC_RADIO_MODE2,"Button",BS_AUTORADIOBUTTON,17,38,68,10
+    CONTROL         "两个箱子各三块驱动板",IDC_RADIO_MODE3,"Button",BS_AUTORADIOBUTTON,17,108,96,10
+    CONTROL         "两个箱子各四块驱动板",IDC_RADIO_MODE4,"Button",BS_AUTORADIOBUTTON,17,126,96,10
+    CONTROL         "一个箱子三块驱动板",IDC_RADIO_MODE5,"Button",BS_AUTORADIOBUTTON,17,89,88,10
+    CONTROL         "十二个单通道TEC",IDC_RADIO_MODE6,"Button",BS_AUTORADIOBUTTON,17,57,76,10
+    GROUPBOX        "旧版本",IDC_STATIC,7,4,272,73
+    LTEXT           "串口1",IDC_STATIC,95,21,21,8
+    EDITTEXT        IDC_EDIT_COM1,119,19,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COM2,170,19,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COM3,221,19,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COM,119,36,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAX_TEMP,102,150,30,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,67,199,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,199,50,14
+    LTEXT           "串口2",IDC_STATIC,146,21,21,8
+    LTEXT           "串口3",IDC_STATIC,197,21,21,8
+    LTEXT           "当前温度超温提示上限",IDC_STATIC,17,154,81,8
+    LTEXT           "串口",IDC_STATIC,96,39,17,8
+    CONTROL         "打开调试功能",IDC_CHECK_DEBUG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,173,64,10
+    EDITTEXT        IDC_EDIT_MIN_TEMP,158,150,30,14,ES_AUTOHSCROLL
+    LTEXT           "下限",IDC_STATIC,137,154,17,8
+    EDITTEXT        IDC_EDIT_COM4,143,107,21,14,ES_AUTOHSCROLL
+    LTEXT           "串口",IDC_STATIC,121,110,17,8
+    EDITTEXT        IDC_EDIT_COM5,143,127,21,14,ES_AUTOHSCROLL
+    LTEXT           "串口",IDC_STATIC,121,129,17,8
+    EDITTEXT        IDC_EDIT_COM6,143,88,21,14,ES_AUTOHSCROLL
+    LTEXT           "串口",IDC_STATIC,121,91,17,8
+    GROUPBOX        "新版本",IDC_STATIC,7,80,272,64
+    PUSHBUTTON      "配置有效TEC",IDC_BTN_VALID,93,172,59,15
+    EDITTEXT        IDC_EDIT_COM7,119,55,21,14,ES_AUTOHSCROLL
+    LTEXT           "串口",IDC_STATIC,96,58,17,8
+END
+
+IDD_DIALOG_PASSWORD DIALOG 0, 0, 187, 83
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "权限确认"
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,38,62,50,14
+    PUSHBUTTON      "取消",IDCANCEL,99,62,50,14
+    LTEXT           "密码",IDC_STATIC,38,30,17,8
+    EDITTEXT        IDC_EDIT_PASSWORD,64,27,85,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_VALID DIALOGEX 0, 0, 301, 165
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "配置有效TEC"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,151,137,50,14
+    PUSHBUTTON      "取消",IDCANCEL,221,137,50,14
+    CONTROL         "TEC1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,17,37,13
+    CONTROL         "TEC2",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,98,17,37,13
+    CONTROL         "TEC3",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,17,37,13
+    CONTROL         "TEC4",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,18,37,13
+    CONTROL         "TEC5",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,47,37,13
+    CONTROL         "TEC6",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,98,47,37,13
+    CONTROL         "TEC7",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,47,37,13
+    CONTROL         "TEC8",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,47,37,13
+    CONTROL         "TEC9",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,79,37,13
+    CONTROL         "TEC10",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,98,79,37,13
+    CONTROL         "TEC11",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,79,37,13
+    CONTROL         "TEC12",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,79,37,13
+    CONTROL         "TEC13",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,110,37,13
+    CONTROL         "TEC14",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,98,110,37,13
+    CONTROL         "TEC15",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,110,37,13
+    CONTROL         "TEC16",IDC_CHECK16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,110,37,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "TestZsTec Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "TestZsTec"
+            VALUE "LegalCopyright", "版权所有 (C) 2019"
+            VALUE "OriginalFilename", "TestZsTec.EXE"
+            VALUE "ProductName", "TestZsTec 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TESTZSTEC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DIALOG_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_DIALOG_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DIALOG_VALID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TESTZSTEC_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_SET_MODE, 0x403, 5, 0
+0xc6d6, 0xe4c0, "\000" 
+    IDC_COMBO_SET_MODE, 0x403, 5, 0
+0xd3bc, 0xc8c8, "\000" 
+    IDC_COMBO_SET_MODE, 0x403, 5, 0
+0xabcb, 0xf2cf, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_SETTING AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TESTZSTEC_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_VALID AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 TestZsTec(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TestZsTec.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

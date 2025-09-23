@@ -1,0 +1,12 @@
+[PARA]
+Mode=1
+Com=7
+Com2=8
+Com3=9
+Total=6
+TecExist=63
+LogRefreshCycle=200
+MaxTemp=25.000000
+MinTemp=10.000000
+LOGFLAG=0.000000
+PowerDouble=0.000000
