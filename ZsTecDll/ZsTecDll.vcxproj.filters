@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{36a3e850-9295-4b03-a916-c4030e7fe2a4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3bb70e83-0762-4d2b-b3ad-1a301ea77c9e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{6e934a7f-d8ab-4d68-ba8a-b6de6903a5ab}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{3cd17f85-265a-44b1-b553-cb318d89db9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="export">
+      <UniqueIdentifier>{26b46867-8bde-45b7-add8-e5206226cdf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{f495da2e-2030-4174-8967-bd3a50f5ed8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\RsCommDll">
+      <UniqueIdentifier>{22a0852b-b076-452b-8b48-b8c54acb7092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\ZsFdb">
+      <UniqueIdentifier>{4860fd0a-f8ba-4e8c-84a4-91bd6e0c6f75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\ZsIni">
+      <UniqueIdentifier>{4da29514-c828-417f-90b2-ccfc6d99c666}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZsTecDll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TecBase.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TecV1.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TecV2.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zsTec.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TecNewPro.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TecV3.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ZsTecDll.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZsTecDll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TecBase.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TecV1.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TecV2.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zsTec.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="export\zsTecDll.h">
+      <Filter>export</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\RsCommDll\RsCommDll.h">
+      <Filter>libs\RsCommDll</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\ZsFdb\ZsFdb.h">
+      <Filter>libs\ZsFdb</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\ZsIni\ZsIni.h">
+      <Filter>libs\ZsIni</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\ZsIni\ZsIni_config.h">
+      <Filter>libs\ZsIni</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TecNewPro.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TecV3.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ZsTecDll.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\ZsTecDll.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libs\RsCommDll\RsCommDll.config">
+      <Filter>libs\RsCommDll</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libs\ZsFdb\ZsFdb.config">
+      <Filter>libs\ZsFdb</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
